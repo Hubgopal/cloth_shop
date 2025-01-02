@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cloth Shop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap css file -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+
+        <!-- Font awesome icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap icons  -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet">
+
+        <!-- main css file -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- <link rel="stylesheet" href="css/themify-icons.css"> -->
+
+    </head>
+    <body>
+        <!-- navbar -->
+        <section class="header">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Clothes Shop</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span
+                            class="ti-align-justify navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#categories">Categories</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blogs">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Abouts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="navbar-icons ms-3 d-none d-lg-flex">
+                            <a href="#" class="nav-icon"><i
+                                    class="bi bi-search"></i></a>
+                            <a href="#" class="nav-icon position-relative">
+                                <i class="bi bi-cart2"
+                                    style="font-size: 24px;"></i>
+                                <span
+                                    class="badge position-absolute top-0 start-100 translate-middle cart-count"
+                                    style="font-size: 12px; padding: 0.25em 0.5em; border-radius: 50%; background-color: #ff909d; color: #fff; min-width: 20px; min-height: 20px; display: flex; align-items: center; justify-content: center;">0</span>
+                            </a>
+                            <a href="#" class="nav-icon"><i
+                                    class="bi bi-person-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Home section -->
+        <section id="home" class="home overflow-hidden">
+            <div id="carouselExampleIndicators" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="home-banner home-banner-1 img-fluid">
+                                <div class="home-banner-text">
+                                    <h1>Welcome to Fashion Hub</h1>
+                                    <!-- <h2>Up to 52% Off on Latest Styles</h2> -->
+                                    <p>Discover the trendiest outfits for every
+                                        season. Shop now for exclusive deals on
+                                        your favorite brands and elevate your
+                                        wardrobe with our chic collection!</p>
+                                    <a href="#"
+                                        class="btn text-uppercase mt-4">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="home-banner home-banner-2">
+                                <div class="home-banner-text">
+                                    <h1>Shop Your Style</h1>
+                                    <!-- <h2>Huge Discounts on New Arrivals</h2> -->
+                                    <p>Get ready for the new season with the
+                                        latest fashion picks. Enjoy unbeatable
+                                        prices on top-quality clothing and
+                                        accessories to fit your personal
+                                        style!</p>
+                                    <a href="#"
+                                        class="btn text-uppercase mt-4">Explore
+                                        Our Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="home-banner home-banner-3">
+                                <div class="home-banner-text">
+                                    <h1>Upgrade Your Wardrobe</h1>
+                                    <!-- <h2>Exclusive 52% Discount on Select -->
+                                    Items</h2>
+                                <p>Find the perfect outfit for any occasion,
+                                    from casual wear to formal looks. Take
+                                    advantage of limited-time offers and
+                                    shop your favorite styles now!</p>
+                                <a href="#"
+                                    class="btn text-uppercase mt-4">Shop
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span
+                        class="fa-solid fa-chevron-left ti-angle-left slider-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span
+                        class="fa-solid fa-chevron-right ti-angle-right slider-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- categories section -->
+
+        <div class="categories" id="categories">
+            <h1 class="text-center ms-auto"></h1>
+            <ul class="nav nav-tabs d-flex justify-content-center"
+                id="myTab"
+                role="tablist">
+                <!-- Men Tab -->
+                <li class="nav-item" role="presentation">
+                    <button class="btn active" id="home-tab"
+                        data-bs-toggle="tab" data-bs-target="#tab1"
+                        type="button" role="tab" aria-controls="home"
+                        aria-selected="true">
+                        <i class="fas fa-male me-2"></i>Men
+                    </button>
+                </li>
+                <!-- Women Tab -->
+                <li class="nav-item" role="presentation">
+                    <button class="btn" id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab2" type="button" role="tab"
+                        aria-controls="profile" aria-selected="false">
+                        <i class="fas fa-female me-2"></i>Women
+                    </button>
+                </li>
+                <!-- Kids Tab -->
+                <li class="nav-item" role="presentation">
+                    <button class="btn" id="contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab3" type="button" role="tab"
+                        aria-controls="contact" aria-selected="false">
+                        <i class="fas fa-child me-2"></i>Kids
+                    </button>
+                </li>
+                <!-- Accessories Tab -->
+                <li class="nav-item" role="presentation">
+                    <button class="btn" id="contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab4" type="button" role="tab"
+                        aria-controls="contact" aria-selected="false">
+                        <i class="fas fa-hat-cowboy me-2"></i>Accessories
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+            <!-- tab section 1 -->
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                aria-labelledby="home-tab">
+
+                <section id="featured">
+                    <section class="featured-products">
+                        <div class="container" id="featured-products">
+                            <h2 class="text-center mb-4">Men</h2>
+                            <div class="row g-4" id="featured-product-list">
+                                <!-- Products 1 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shirt-2.jpg"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 2 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jacket-2.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Running
+                                                Shoes</h5>
+                                            <p>$50.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 3 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/sports-1.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Running
+                                                Shoes</h5>
+                                            <p>$50.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 4 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jacket-4.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Running
+                                                Shoes</h5>
+                                            <p>$50.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 5 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/belt.jpg"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Leather
+                                                Jacket</h5>
+                                            <p>$70.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 6 -->
+
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shirt-1.jpg"
+                                            class="card-img-top" alt="Bag">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Leather
+                                                Bag</h5>
+                                            <p>$80.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 7 -->
+
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shorts-2.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Formal
+                                                Shoes</h5>
+                                            <p>$90.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 8 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shoe-1.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 9 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shoe-2.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 10 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/sports-1.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 11 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/sports-2.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 12 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/sports-3.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 13 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/watch-2.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Products 14 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/watch-3.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="text-center">
+                                <button id="load-more-featured"
+                                    class="btn mt-4">Load
+                                    More</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <!-- tab section 2 -->
+            <div class="tab-pane fade" id="tab2" role="tabpanel"
+                aria-labelledby="profile-tab">
+
+                <section id="arrival">
+                    <section class="lattest-arrival">
+                        <div class="container" id="latest-arrivals">
+                            <h2 class="text-center mb-4">Women</h2>
+                            <div class="row g-4" id="latest-product-list">
+                                <!-- Products 1 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jacket-5.jpg"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 2 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/clothes-1.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Running
+                                                Shoes</h5>
+                                            <p>$50.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Products 3 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shorts-2.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Running
+                                                Shoes</h5>
+                                            <p>$50.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 4 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/clothes-3.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Running
+                                                Shoes</h5>
+                                            <p>$50.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 5 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jewellery-3.jpg"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Leather
+                                                Jacket</h5>
+                                            <p>$70.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 6 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/clothes-4.jpg"
+                                            class="card-img-top" alt="Bag">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Leather
+                                                Bag</h5>
+                                            <p>$80.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 7 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jacket-6.jpg"
+                                            class="card-img-top"
+                                            alt="Shoes">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Formal
+                                                Shoes</h5>
+                                            <p>$90.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 8 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jewellery-1.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 9 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/jewellery-2.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 10 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/party-wear-1.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 11 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/perfume.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 12 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/clothes-2.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 13 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/shampoo.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 14 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/watch-1.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Products 15 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: none;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/sports-6.jpg"
+                                            class="card-img-top"
+                                            alt="Smartwatch">
+                                        <div class="card-body text-center">
+                                            <h5
+                                                class="card-title">Smartwatch</h5>
+                                            <p>$150.00</p>
+                                            <button class="btn w-100 add">
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="text-center">
+                                <button id="load-more-latest"
+                                    class="btn mt-4"
+                                    style="background: #ff909d;font-weight: bold;color: #fff;">Load
+                                    More</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <!-- tab section 3 -->
+            <div class="tab-pane fade" id="tab3" role="tabpanel"
+                aria-labelledby="contact-tab">
+
+                <section id="arrival">
+                    <section class="latest-arrival">
+                        <div class="container" id="kids-arrivals">
+                            <h2 class="text-center mb-4">Kids</h2>
+                            <div class="row g-4" id="kids-product-list">
+                                <!-- Product 1 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (1).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 2 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (2).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (3).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 4 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (4).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 5 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (5).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 6 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (6).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 7 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (7).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 8 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (8).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 9 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/kids (9).webp"
+                                            class="card-img-top"
+                                            alt="Jacket">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Winter
+                                                Jacket</h5>
+                                            <p>$60.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add other products here -->
+                            </div>
+                            <div class="text-center">
+                                <button id="load-more-kids" class="btn mt-4"
+                                    style="background: #ff909d; font-weight: bold; color: #fff;">Load
+                                    More</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+            <!-- tab section 4 -->
+            <div class="tab-pane fade" id="tab4" role="tabpanel"
+                aria-labelledby="contact-tab">
+                <section id="arrival">
+                    <section class="latest-arrival">
+                        <div class="container" id="accessories-arrivals">
+                            <h2 class="text-center mb-4">Accessories</h2>
+                            <div class="row g-4"
+                                id="accessories-product-list">
+                                <!-- Product 1 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/accessories (1).webp"
+                                            class="card-img-top"
+                                            alt="Watch">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Stylish
+                                                Watch</h5>
+                                            <p>$45.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 2 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/accessories (2).webp"
+                                            class="card-img-top"
+                                            alt="Watch">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Stylish
+                                                Watch</h5>
+                                            <p>$45.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/accessories (3).webp"
+                                            class="card-img-top"
+                                            alt="Watch">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Stylish
+                                                Watch</h5>
+                                            <p>$45.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 4 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/accessories (4).webp"
+                                            class="card-img-top"
+                                            alt="Watch">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Stylish
+                                                Watch</h5>
+                                            <p>$45.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 5 -->
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-6 product"
+                                    style="display: block;">
+                                    <div class="card pro">
+                                        <img
+                                            src="css/images/products/accessories (5).webp"
+                                            class="card-img-top"
+                                            alt="Watch">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Stylish
+                                                Watch</h5>
+                                            <p>$45.00</p>
+                                            <button
+                                                class="btn w-100 add">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add other products here -->
+                            </div>
+                            <div class="text-center">
+                                <button id="load-more-accessories"
+                                    class="btn mt-4"
+                                    style="background: #ff909d; font-weight: bold; color: #fff;">Load
+                                    More</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Testimonials section -->
+        <section class="testimonials" id="testimonials"
+            style="padding-top: 25px;">
+            <h2 class="title text-center">Testimonials</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- Testimonial Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card card pro">
+                            <img src="css/images/testimonial-1.jpg"
+                                alt="Alan Doe"
+                                class="testimonial-banner  card-img-top rounded-circle"
+                                style="width:50% !important;margin: auto;margin-top: 50px;">
+                            <div class="card-body text-center">
+                                <p class="testimonial-name card-title">Gopal
+                                    Dawar</p>
+                                <p class="testimonial-title card-text">CEO
+                                    &amp;
+                                    Founder, Invision</p>
+                                <img src="css/images/icons/quotes.svg"
+                                    alt="Quotation"
+                                    class="quotation-img" width="26">
+                                <p class="testimonial-desc card-text">Lorem
+                                    ipsum dolor sit amet consectetur Lorem
+                                    ipsum
+                                    dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card card pro">
+                            <img src="css/images/testimonial-2.jpg"
+                                alt="Jane Smith"
+                                class="testimonial-banner card-img-top rounded-circle"
+                                style="width:50% !important;margin: auto;margin-top: 50px;">
+                            <div class="card-body text-center">
+                                <p class="testimonial-name card-title">Jane
+                                    Smith</p>
+                                <p
+                                    class="testimonial-title card-text">Marketing
+                                    Head, XYZ Inc.</p>
+                                <img src="css/images/icons/quotes.svg"
+                                    alt="Quotation"
+                                    class="quotation-img" width="26">
+                                <p
+                                    class="testimonial-desc card-text">Pellentesque
+                                    habitant morbi tristique senectus et
+                                    netus
+                                    et malesuada.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card card pro">
+                            <img src="css/images/testimonial-3.jpg"
+                                alt="Michael Johnson"
+                                class="testimonial-banner card-img-top"
+                                style="width:50% !important;margin: auto;margin-top: 50px;">
+                            <div class="card-body text-center">
+                                <p
+                                    class="testimonial-name card-title">Michael
+                                    Johnson</p>
+                                <p
+                                    class="testimonial-title card-text">Product
+                                    Manager, Tech Solutions</p>
+                                <img src="css/images/icons/quotes.svg"
+                                    alt="Quotation"
+                                    class="quotation-img" width="26">
+                                <p
+                                    class="testimonial-desc card-text">Product
+                                    mangager Nullam
+                                    quis risus eget urna mollis ornare vel
+                                    eu
+                                    leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog section  -->
+        <section class="blogs" id="blogs" style="padding-top: 25px;">
+            <h2 class="title">Our Blogs</h2>
+            <div class="row">
+                <!-- Blog 1 -->
+                <div class="col-md-4">
+                    <div class="blog-card pro">
+                        <img src="css/images/blog-1.jpg" alt="Blog 1"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Blog Title 1</h3>
+                            <p class="blog-desc">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Vivamus lacinia
+                                odio vitae vestibulum.</p>
+                            <a href="#" class="read-more"
+                                style="font-weight: bold;color: #ff909d">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="col-md-4">
+                    <div class="blog-card pro">
+                        <img src="css/images/blog-2.jpg" alt="Blog 2"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Blog Title 2</h3>
+                            <p class="blog-desc">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Vivamus lacinia
+                                odio vitae vestibulum.</p>
+                            <a href="#" class="read-more"
+                                style="font-weight: bold;color: #ff909d">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="col-md-4">
+                    <div class="blog-card pro">
+                        <img src="css/images/blog-3.jpg" alt="Blog 3"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Blog Title 3</h3>
+                            <p class="blog-desc">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Vivamus lacinia
+                                odio vitae vestibulum.</p>
+                            <a href="#" class="read-more"
+                                style="font-weight: bold;color: #ff909d">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 4 -->
+                <div class="col-md-4">
+                    <div class="blog-card pro">
+                        <img src="css/images/blog-4.jpg" alt="Blog 3"
+                            class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Blog Title 4</h3>
+                            <p class="blog-desc">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Vivamus lacinia
+                                odio vitae vestibulum.</p>
+                            <a href="#" class="read-more"
+                                style="font-weight: bold;color: #ff909d">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about">
+            <section class="about py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">About Us</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card pro hover-effect">
+                                <img src="css/images/about2.jpg"
+                                    class="card-img-top"
+                                    alt="About Us Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Our Mission</h5>
+                                    <p class="card-text">
+                                        Our mission is to provide
+                                        high-quality
+                                        clothing at affordable prices while
+                                        delivering excellent customer
+                                        service.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card pro hover-effect">
+                                <img src="css/images/about3.jpg"
+                                    class="card-img-top"
+                                    alt="About Us Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Our Values</h5>
+                                    <p class="card-text">
+                                        We believe in sustainability,
+                                        fashion-forwardness, and ensuring
+                                        our
+                                        customers feel great with every
+                                        purchase.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card pro hover-effect">
+                                <img src="css/images/about1.jpg"
+                                    class="card-img-top"
+                                    alt="About Us Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Our Promise</h5>
+                                    <p class="card-text">
+                                        We promise to continue offering
+                                        high-quality fashion, maintaining an
+                                        ethical supply chain, and providing
+                                        unmatched customer care.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact" style="padding-top: 25px;">
+            <section class="contact">
+                <div class="container py-5">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="btn w-100">Submit</button>
+                    </form>
+                </div>
+
+            </section>
+        </section>
+
+        <!-- footer -->
+        <section class="footer" style="background-color: #2c2c2c">
+            <div class="footer-container">
+                <!-- Footer Categories -->
+                <div class="footer-category d-flex">
+
+                    <div class="footer-category-box">
+                        <h3 class="footer-category-title">Information</h3>
+                        <a href="#" class="footer-category-link">About
+                            Us</a>
+                        <a href="#" class="footer-category-link">Contact</a>
+                        <a href="#" class="footer-category-link">Privacy
+                            Policy</a>
+                        <a href="#" class="footer-category-link">Terms &
+                            Conditions</a>
+                    </div>
+
+                    <div class="footer-category-box">
+                        <h3 class="footer-category-title">Help</h3>
+                        <a href="#" class="footer-category-link">FAQ</a>
+                        <a href="#" class="footer-category-link">Support</a>
+                        <a href="#" class="footer-category-link">Shipping
+                            Info</a>
+                        <a href="#" class="footer-category-link">Returns</a>
+                    </div>
+                    <!-- Footer Navigation -->
+                    <div class="footer-nav">
+                        <h3 class="nav-title">Quick Links</h3>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#"
+                                    class="footer-nav-link">Home</a></li>
+                            <li class="footer-nav-item"><a href="#"
+                                    class="footer-nav-link">Shop</a></li>
+                            <li class="footer-nav-item"><a href="#"
+                                    class="footer-nav-link">Blog</a></li>
+                            <li class="footer-nav-item"><a href="#"
+                                    class="footer-nav-link">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <div class="contact-info">
+                            <h3 style="color: #fff;"> Contact Us</h3>
+                            <p style="color: #ff909d;">Phone: 123-456-789</p>
+                            <p style="color: #ff909d;">Email:
+                                support@example.com</p>
+                        </div>
+                        <div class="social-links">
+                            <ul class="social-link">
+                                <li class="footer-nav-item"><a href="#"
+                                        class="footer-nav-link"><i
+                                            class="fab fa-facebook"></i></a></li>
+                                <li class="footer-nav-item"><a href="#"
+                                        class="footer-nav-link"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="footer-nav-item"><a href="#"
+                                        class="footer-nav-link"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li class="footer-nav-item"><a href="#"
+                                        class="footer-nav-link"><i
+                                            class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer Contact Info and Social Media -->
+
+                <!-- Footer Bottom Section -->
+                <div class="footer-bottom">
+                    <div class="payment-methods">
+                        <img src="css/images/payment.png"
+                            alt="Payment Methods"
+                            class="payment-img">
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2024 Your Company. All Rights
+                            Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <script src="js/script.js"></script>
+        <script src="js/active.js"></script>
+    </body>
+</html>
